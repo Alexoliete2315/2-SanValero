@@ -1,0 +1,12 @@
+*&---------------------------------------------------------------------*
+*& Include          Z_ENCUESTA_VISUAL_SANV319_SEL
+*&---------------------------------------------------------------------*
+
+SELECTION-SCREEN BEGIN OF BLOCK bloqueFiltros WITH FRAME TITLE TEXT-000.
+  PARAMETERS : p_dni  TYPE String,
+               p_fenc TYPE sydatum.
+SELECTION-SCREEN END OF BLOCK bloqueFiltros.
+
+INITIALIZATION.
+p_dni = TEXT-c01.
+p_fenc = TEXT-c02.

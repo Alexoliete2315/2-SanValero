@@ -1,0 +1,11 @@
+
+
+    IF sy-ucomm EQ 'F1'.
+      SUBMIT z_encuesta_crear_sanv319 VIA SELECTION-SCREEN AND RETURN. "a la pantalla de crear
+
+    ELSEIF sy-ucomm EQ 'F2'.
+      SUBMIT z_encuesta_visual_sanv319 VIA SELECTION-SCREEN AND RETURN. "a la pantalla de visualizacion
+
+    ELSEIF sy-ucomm EQ 'F3'.
+      SUBMIT z_encuesta_elimin_sanv319 VIA SELECTION-SCREEN AND RETURN. "a la pantalla de eliminar
+    ENDIF.

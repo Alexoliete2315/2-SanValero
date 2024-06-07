@@ -1,0 +1,42 @@
+*&---------------------------------------------------------------------*
+*& Include          Z_ENCUESTA_CREAR_SANV319_F01
+*&---------------------------------------------------------------------*
+FORM existe_dni.
+  SELECT * FROM zencr_sanv319 APPENDING TABLE resultados WHERE dni = p_dni.
+ENDFORM.
+FORM rellenar_encuesta.
+  "ASIGNAR A LA ESTRUCTURA CREADA EN GWA , ASIGNARLE PARAMETROS"
+  resultados-dni = p_dni.
+  resultados-nombre = p_nom.
+  resultados-apellidos = p_apell.
+  resultados-fecha_nacimiento = p_fnac.
+  resultados-facebook = p_face.
+  resultados-instagram = p_insta.
+  resultados-twitter = p_twt.
+  resultados-linkedin = p_link.
+  resultados-mas_2h = p_mas2h.
+  resultados-menos_2h = p_men2h.
+  resultados-fecha_encuesta = p_fenc.
+  resultados-paro = p_paro.
+  resultados-activo = p_activ.
+ENDFORM.
+
+FORM insertar_encuesta.
+  INSERT zencr_sanv319 FROM resultados.
+ENDFORM.
+
+START-OF-SELECTION.
+  PERFORM existe_dni.
+
+  IF sy-subrc EQ 0.
+    MESSAGE i009(zenc_sanv319).
+    SUBMIT z_encuesta_crear_sanv319 VIA SELECTION-SCREEN.
+  ELSE.
+
+    PERFORM rellenar_encuesta.
+    PERFORM insertar_encuesta.
+
+    IF sy-subrc EQ 0.
+      MESSAGE i007(zenc_sanv319).
+    ENDIF.
+  ENDIF.

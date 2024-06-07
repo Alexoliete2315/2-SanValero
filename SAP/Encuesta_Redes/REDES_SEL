@@ -1,0 +1,20 @@
+*&---------------------------------------------------------------------*
+*& Include          Z_ENCUESTA_REDES_SANV319_SEL
+*&---------------------------------------------------------------------*
+
+*INFORMACION ENCUESTADO
+SELECTION-SCREEN BEGIN OF BLOCK selecc WITH FRAME TITLE TEXT-001.
+  SELECTION-SCREEN BEGIN OF LINE.
+    SELECTION-SCREEN PUSHBUTTON (20) p_crear USER-COMMAND f1. "Boton para crear encuesta
+    SELECTION-SCREEN PUSHBUTTON 30(25) p_ver USER-COMMAND f2. "Boton para ver encuestas creadas
+    SELECTION-SCREEN PUSHBUTTON 65(25) p_borrar USER-COMMAND f3. "Boton para borrar encuesta
+  SELECTION-SCREEN END OF LINE.
+SELECTION-SCREEN END OF BLOCK selecc.
+
+
+INITIALIZATION.
+  "Código donde se concatena el icono elegido con el texto del botón
+  CONCATENATE icon_change_text 'Crear Encuesta'INTO p_crear SEPARATED BY space.
+  CONCATENATE icon_display_text 'Visualizar Encuesta' INTO p_ver SEPARATED BY space.
+  CONCATENATE icon_delete 'Eliminar Encuesta' INTO p_borrar SEPARATED BY space.
+  AT SELECTION-SCREEN.

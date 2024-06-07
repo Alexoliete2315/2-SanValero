@@ -1,0 +1,14 @@
+*&---------------------------------------------------------------------*
+*& Include          Z_ENCUESTA_ELIMIN_SANV319_F01
+*&---------------------------------------------------------------------*
+FORM borrar_encuesta.
+
+  DELETE FROM ZENCR_SANV319 WHERE dni = p_dni.
+
+  IF sy-subrc EQ 0.
+    MESSAGE i005(ZENC_SANV319).
+  ELSE.
+    MESSAGE i006(ZENC_SANV319).
+  ENDIF.
+
+ENDFORM.

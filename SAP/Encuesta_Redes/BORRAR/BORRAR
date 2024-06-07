@@ -1,0 +1,11 @@
+*&---------------------------------------------------------------------*
+*& Report Z_ENCUESTA_ELIMIN_SANV319
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT Z_ENCUESTA_ELIMIN_SANV319.
+
+INCLUDE Z_ENCUESTA_ELIMIN_SANV319_TOP.
+INCLUDE Z_ENCUESTA_ELIMIN_SANV319_SEL.
+INCLUDE Z_ENCUESTA_ELIMIN_SANV319_F01.
+INCLUDE Z_ENCUESTA_ELIMIN_SANV319_P01.

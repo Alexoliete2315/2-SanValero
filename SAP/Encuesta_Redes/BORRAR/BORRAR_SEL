@@ -1,0 +1,12 @@
+*&---------------------------------------------------------------------*
+*& Include          Z_ENCUESTA_ELIMIN_SANV319_SEL
+*&---------------------------------------------------------------------*
+SELECTION-SCREEN BEGIN OF BLOCK parametros WITH FRAME TITLE TEXT-002.
+  PARAMETERS : p_dni TYPE String.
+SELECTION-SCREEN END OF BLOCK parametros.
+
+AT SELECTION-SCREEN ON p_dni.
+  FIND REGEX '([a-z]|[A-Z]|[0-9])[0-9]{7}([a-z]|[A-Z]|[0-9])' IN p_dni.
+  IF sy-subrc  <> 0.
+    MESSAGE e008(zenc_sanv319).
+  ENDIF.

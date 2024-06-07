@@ -1,0 +1,4 @@
+*&---------------------------------------------------------------------*
+*& Include          Z_ENCUESTA_VISUAL_SANV319_TOP
+*&---------------------------------------------------------------------*
+DATA resultados TYPE STANDARD TABLE OF ZENCR_SANV319 WITH HEADER LINE.

@@ -1,0 +1,40 @@
+*&---------------------------------------------------------------------*
+*& Include          Z_ENCUESTA_VISUAL_SANV319_F01
+*&---------------------------------------------------------------------*
+
+FORM visualizar_encuesta.
+
+
+  IF p_dni IS INITIAL AND p_fenc IS INITIAL.  "BUSQUEDA POR AMBOS"
+    SELECT * FROM zencr_sanv319 APPENDING TABLE resultados.
+  ELSEIF p_dni IS INITIAL AND p_fenc IS NOT INITIAL. "BUSQUEDA POR DNI"
+    SELECT * FROM zencr_sanv319 APPENDING TABLE resultados WHERE fecha_encuesta = p_fenc.
+  ELSEIF p_dni IS NOT INITIAL AND p_fenc IS INITIAL. "BUSQUEDA POR FECHA DE REALIZACION DE LA ENCUESTA"
+    SELECT * FROM zencr_sanv319 APPENDING TABLE resultados WHERE dni = p_dni.
+  ELSEIF p_dni IS NOT INITIAL AND p_fenc IS NOT INITIAL. "BUSQUEDA SIN FILTROS"
+    SELECT * FROM zencr_sanv319 APPENDING TABLE resultados WHERE dni = p_dni AND fecha_encuesta = p_fenc.
+  ENDIF.
+
+  IF sy-subrc = 0.
+
+* TODO EL DISEÑO DE LOS RESULTADOS
+    LOOP AT resultados.
+      WRITE: / '______________________________________________________________________',
+             / '| DNI: ',resultados-dni,
+             / '| Nombre: ', resultados-nombre,
+             / '| Apellidos: ', resultados-apellidos,
+             / '| Fecha nacimiento: ', resultados-fecha_nacimiento,
+             / '| Fecha encuesta: ', resultados-fecha_encuesta,
+             / '______________________________________________________________________',
+             / ' INSTAGRAM     FACEBOOK      TWITTER        LINKEDIN    ' ,
+             / '  |',resultados-instagram,'|         |',resultados-facebook,'|         |',resultados-twitter,'|         |',resultados-linkedin,'| ',
+             / '______________________________________________________________________'.
+      SKIP.
+    ENDLOOP.
+
+  ELSE.
+    MESSAGE i004(zenc_sanv319).
+  ENDIF.
+
+
+ENDFORM.
