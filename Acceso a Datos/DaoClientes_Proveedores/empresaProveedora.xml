@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresas_proveedoras>
+  <empresa_proveedora>
+    <Id_EmpresaProveedora>1</Id_EmpresaProveedora>
+    <CIF>ABC123</CIF>
+    <Nombre_empresa_proveedora>KAYMO</Nombre_empresa_proveedora>
+    <DireccionPostal>Calle Principal 123</DireccionPostal>
+    <DIreccionWeb>www.proveedorA.com</DIreccionWeb>
+    <Telefono>555123456</Telefono>
+    <PersonaContacto>Contacto A</PersonaContacto>
+  </empresa_proveedora>
+  <empresa_proveedora>
+    <Id_EmpresaProveedora>2</Id_EmpresaProveedora>
+    <CIF>XYZ456</CIF>
+    <Nombre_empresa_proveedora>MARTIN MARTIN</Nombre_empresa_proveedora>
+    <DireccionPostal>Avenida Secundaria 456</DireccionPostal>
+    <DIreccionWeb>www.proveedorB.com</DIreccionWeb>
+    <Telefono>666789012</Telefono>
+    <PersonaContacto>Contacto B</PersonaContacto>
+  </empresa_proveedora>
+  <empresa_proveedora>
+    <Id_EmpresaProveedora>3</Id_EmpresaProveedora>
+    <CIF>DEF789</CIF>
+    <Nombre_empresa_proveedora>AMAZON</Nombre_empresa_proveedora>
+    <DireccionPostal>Calle Terciaria 789</DireccionPostal>
+    <DIreccionWeb>www.proveedorC.com</DIreccionWeb>
+    <Telefono>777234567</Telefono>
+    <PersonaContacto>Contacto C</PersonaContacto>
+  </empresa_proveedora>
+</empresas_proveedoras>

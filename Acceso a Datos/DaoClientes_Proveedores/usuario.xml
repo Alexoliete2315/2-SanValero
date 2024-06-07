@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usuarios>
+  <usuario>
+    <Id_Usuario>1</Id_Usuario>
+    <Usuario>usuario1</Usuario>
+    <Password>clave123</Password>
+    <Nombre_usuario>Juan Pérez</Nombre_usuario>
+    <MetodoPago>Tarjeta de Crédito</MetodoPago>
+    <Telefono>555123456</Telefono>
+    <CorreoElectronico>juan@example.com</CorreoElectronico>
+  </usuario>
+  <usuario>
+    <Id_Usuario>2</Id_Usuario>
+    <Usuario>usuario2</Usuario>
+    <Password>clave456</Password>
+    <Nombre_usuario>Ana Martínez</Nombre_usuario>
+    <MetodoPago>Transferencia Bancaria</MetodoPago>
+    <Telefono>666789012</Telefono>
+    <CorreoElectronico>ana@example.com</CorreoElectronico>
+  </usuario>
+  <usuario>
+    <Id_Usuario>3</Id_Usuario>
+    <Usuario>usuario3</Usuario>
+    <Password>clave789</Password>
+    <Nombre_usuario>Carlos Rodríguez</Nombre_usuario>
+    <MetodoPago>Efectivo</MetodoPago>
+    <Telefono>777234567</Telefono>
+    <CorreoElectronico>carlos@example.com</CorreoElectronico>
+  </usuario>
+</usuarios>
