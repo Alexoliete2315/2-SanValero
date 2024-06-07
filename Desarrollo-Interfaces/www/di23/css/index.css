@@ -1,0 +1,286 @@
+html {
+    background: linear-gradient(180deg, #b88d37 0%, #fff767 100%) !important;
+    min-height: 100%;
+}
+
+body {
+    background-color: transparent;
+    min-height: 100% !important;
+}
+
+.divLogotipo {
+    text-align: left;
+}
+
+.divLogotipo img {
+    height: 3em;
+}
+
+.divLog {
+    text-align: right;
+}
+
+.divLog img {
+    height: 2em;
+}
+
+.divTituloApp {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#secEncabezadoPagina {
+    background: linear-gradient(180deg, #fff767 0%, #b88d37 100%);
+}
+
+#cabeceraApartados {
+    background-color: #b88d37;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#imgLogo {
+    display: flex !important;
+    align-items: center;
+}
+
+#miNombre {
+    display: flex !important;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000;
+}
+
+#logoLogin {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#logOut {
+    background: linear-gradient(180deg, #fff767 0%, #b88d37 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+#secMenuPagina {
+    padding-left: unset;
+    padding-right: unset;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3), 0 0 16px rgba(0, 0, 0, 0.5);
+
+}
+
+#bloqueContenido {
+    background: transparent;
+}
+
+#secContenidoPagina {
+    background: transparent;
+}
+
+#bloqueTxt {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#txtBusqueda {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 16px rgba(255, 247, 103, 1), 0 0 16px rgba(255, 247, 103, 1);
+}
+
+#formularioBuscar {
+    margin-bottom: 15px;
+}
+
+#formularioBuscar>* {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#txtInsertar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 16px rgba(255, 247, 103, 1), 0 0 16px rgba(255, 247, 103, 1);
+}
+
+#formularioCrear>* {
+    margin-right: 10px !important;
+}
+
+#camposUsuario>* {
+    margin-right: 15px;
+}
+
+label {
+    font-weight: bolder;
+}
+
+input {
+    background: linear-gradient(180deg, #b88d37 0%, #fff767 100%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input::placeholder {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+input[type="checkbox"] {
+    color: #b88d37;
+}
+
+input[type="checkbox"]:focus {
+    outline: 2px solid #fff767;
+}
+
+
+
+select {
+    background: linear-gradient(180deg, #b88d37 0%, #fff767 100%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    border-color: #000 !important;
+}
+
+button {
+    color: #000 !important;
+    border-color: #000 !important;
+    background: linear-gradient(180deg, #fff767 0%, #b88d37 100%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder !important;
+}
+
+#btnBuscar:focus,
+#btnCreateUser:focus,
+#btnInsertar:focus,
+#btnUpdatear:focus {
+    box-shadow: 0 0 7px black;
+}
+
+#btnCamposUpdate:focus {
+    box-shadow: 0 0 10px #fff767, 0 0 15px #b88d37;
+    /* Puedes ajustar los colores y los tamaños según tus preferencias */
+}
+
+#bloqueTabla {
+    width: 100% !important;
+    /* height: 600px !important;  */
+    scroll-behavior: auto;
+    overflow: auto;
+}
+
+#tablaListado {
+    border: solid black 1px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+    width: 100% !important;
+    margin-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* #tablaListado th{
+    text-align: center !important;
+
+} */
+th {
+    text-align: center !important;
+  }
+/* th:first-child, */
+td:first-child {
+    width: auto !important;
+    text-align: left !important;
+}
+/* th:nth-child(2), */
+td:nth-child(2),
+/* th:nth-child(3), */
+td:nth-child(3) {
+    text-align: left !important;
+}
+
+/* th:nth-child(4), */
+td:nth-child(4),
+/* th:nth-child(6), */
+td:nth-child(6),
+/* th:nth-child(7), */
+td:nth-child(7) {
+    text-align: center !important;
+}
+
+/* th:nth-child(5), */
+td:nth-child(5) {
+    text-align: right !important;
+}
+
+/* table tr th,
+table tr td{
+    text-align: center !important;
+} */
+td:nth-child(4) img {
+    width: 50px;
+    height: 50px;
+}
+td:nth-child(6) img {
+    width: 40px;
+    height: 40px;
+}
+
+#imgMasc {
+    /* background-color: #fff767; */
+    border-radius: 50%;
+}
+
+#imgFem {
+    /* background-color: #fff767; */
+    border-radius: 50%;
+}
+
+/* table tr td:nth-child(1) {
+    text-align: center !important; 
+}
+table tr td:nth-child(2) {
+    text-align: left ;
+}
+
+table tr td:nth-child(4) {
+    text-align: center !important;
+}
+
+table tr td:nth-child(5) {
+    text-align: center !important;
+}
+table tr td:nth-child(6) {
+    text-align: right !important;
+} */
+
+#tablaListado th,
+#tablaListado td {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.error-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.error {
+    margin-right: 10px;
+    /* Espacio entre los mensajes de error */
+    margin-bottom: 10px;
+    /* Espacio debajo de los mensajes de error */
+    color: red;
+    /* Color rojo para el texto de error */
+}
+
+.error-field {
+    color: red;
+    /* Color rojo para el campo de error */
+    margin-bottom: 5px;
+    /* Espacio debajo del campo de error */
+}
+
+
+/* #capaResultadosBusqueda {
+    
+} */
