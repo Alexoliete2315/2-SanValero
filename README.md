@@ -1,2 +1,2 @@
 # 2-SanValero
-Todo lo hecho en cada asignatura en SanValero
+Lo realizado en las asignaturas en el segundo curso de San Valero
